@@ -1,7 +1,6 @@
 provider "sbercloud" {
-  auth_url     = "https://iam.ru-moscow-1.hc.sbercloud.ru/v3"
-  region       = var.region
-  project_name = var.project_name
+  auth_url = "https://iam.ru-moscow-1.hc.sbercloud.ru/v3"
+  region   = var.region
 }
 
 module "policy" {

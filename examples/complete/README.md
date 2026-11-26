@@ -8,7 +8,7 @@ does not provide a root module.
 
 - Terraform `>= 0.13.1`
 - SberCloud credentials supplied through `SBC_ACCESS_KEY` and `SBC_SECRET_KEY`
-- The name of a SberCloud project and IDs of resources to protect
+- IDs of resources to protect
 
 ## Run
 

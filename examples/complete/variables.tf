@@ -1,8 +1,3 @@
-variable "project_name" {
-  description = "Name of the SberCloud project in which to create CBR resources."
-  type        = string
-}
-
 variable "region" {
   description = "SberCloud region in which to create CBR resources."
   type        = string

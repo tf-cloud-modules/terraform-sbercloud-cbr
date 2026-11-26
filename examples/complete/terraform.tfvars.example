@@ -1,4 +1,3 @@
-project_name = "your-project-name"
 resources = [
   {
     server_id = "your-ecs-server-id"
