@@ -28,15 +28,15 @@ module "policy" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | >= 1.9.0, < 2.0.0 |
+| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | = 1.13.3 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.10.0 |
+| ---- | ------- |
+| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.13.3 |
 
 ## Modules
 
@@ -45,13 +45,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
-| [sbercloud_cbr_policy.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/latest/docs/resources/cbr_policy) | resource |
+| ---- | ---- |
+| [sbercloud_cbr_policy.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/1.13.3/docs/resources/cbr_policy) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_backup_cycle"></a> [backup\_cycle](#input\_backup\_cycle) | Specifies the scheduling rule for the CBR policy backup execution. | `any` | `{}` | no |
 | <a name="input_backup_quantity"></a> [backup\_quantity](#input\_backup\_quantity) | Specifies the maximum number of retained backups. | `number` | `null` | no |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created. | `bool` | `true` | no |
@@ -64,6 +64,6 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | Specifies a resource ID in UUID format. |
 <!-- END_TF_DOCS -->
