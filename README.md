@@ -9,6 +9,11 @@ provider "sbercloud" {
 ```
 
 ## Usage
+
+For an end-to-end configuration which invokes both modules, see
+[`examples/complete`](examples/complete/README.md). The repository intentionally
+does not define a root module.
+
 ### Vault
 ```hcl
 module "vault" {
@@ -35,7 +40,7 @@ module "policy" {
     name            = "cbr-test"
     type            = "backup"
     backup_quantity = 2
-    time            = 2
+    time_period     = 2
     backup_cycle = {
       days            = "MO,TH"
       execution_times = ["06:00"]
