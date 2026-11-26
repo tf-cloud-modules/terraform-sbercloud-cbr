@@ -1,0 +1,7 @@
+resources = [
+  {
+    server_id = "your-ecs-server-id"
+    includes  = ["your-disk-or-sfs-id"]
+    excludes  = []
+  }
+]

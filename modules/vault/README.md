@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud CBR Terraform module (Vault)
 
 ## How to Configure Terraform for Sbercloud
@@ -40,15 +42,15 @@ module "vault" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | >= 1.9.0, < 2.0.0 |
+| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | = 1.13.3 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.10.0 |
+| ---- | ------- |
+| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.13.3 |
 
 ## Modules
 
@@ -57,13 +59,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
-| [sbercloud_cbr_vault.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/latest/docs/resources/cbr_vault) | resource |
+| ---- | ---- |
+| [sbercloud_cbr_vault.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/1.13.3/docs/resources/cbr_vault) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_auto_expand"></a> [auto\_expand](#input\_auto\_expand) | Specifies to enable auto capacity expansion for the backup protection type vault. | `string` | `null` | no |
 | <a name="input_consistent_level"></a> [consistent\_level](#input\_consistent\_level) | Specifies the backup specifications. | `string` | n/a | yes |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created. | `bool` | `true` | no |
@@ -80,6 +82,6 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | Specifies a resource ID in UUID format. |
 <!-- END_TF_DOCS -->
