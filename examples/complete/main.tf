@@ -1,14 +1,3 @@
-terraform {
-  required_version = ">= 0.13.1"
-
-  required_providers {
-    sbercloud = {
-      source  = "sbercloud-terraform/sbercloud"
-      version = "= 1.13.3"
-    }
-  }
-}
-
 provider "sbercloud" {
   auth_url     = "https://iam.ru-moscow-1.hc.sbercloud.ru/v3"
   region       = var.region
