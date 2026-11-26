@@ -9,7 +9,6 @@ module "policy" {
   name            = "${var.name_prefix}-policy"
   type            = "backup"
   backup_quantity = 2
-  time_period     = 2
   backup_cycle = {
     days            = "MO,TH"
     execution_times = ["06:00"]

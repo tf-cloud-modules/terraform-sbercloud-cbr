@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud CBR Terraform module (Policy)
 
 ## Provider configuration
@@ -8,6 +10,13 @@ provider "sbercloud" {
 }
 ```
 
+Set credentials through environment variables:
+
+```
+export SBC_ACCESS_KEY="xxxx-xxx-xxx"
+export SBC_SECRET_KEY="xxxx-xxx-xxx"
+```
+
 ## Usage
 ```hcl
 module "policy" {
@@ -16,7 +25,6 @@ module "policy" {
     name            = "cbr-test"
     type            = "backup"
     backup_quantity = 2
-    time            = 2
     backup_cycle = {
       days            = "MO,TH"
       execution_times = ["06:00"]
